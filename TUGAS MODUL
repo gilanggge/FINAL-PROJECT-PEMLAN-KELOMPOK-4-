@@ -1,0 +1,1904 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+#include <conio.h>
+
+//UTS PEMLAN KELOMPOK
+
+void mod1();//mendeklarasikan fungsi-fungsi yang akan digunakan
+void mod2();
+void mod3();
+void mod4();
+void mod5();
+void mod6();
+void mod7();
+
+int main()//fungsi main
+{
+	char brp;//mendeklarasikan variabel yang akan diguanakan
+	do{//melakukan looping dengan menggunakan fungsi do-while
+		system("cls");
+		printf("=== PEMROGRAMAN LANJUT ===\n");//menampilkan menu modul yang dapat dipilih
+		printf("      1. MODUL 1\n");
+		printf("      2. MODUL 2\n");
+		printf("      3. MODUL 3\n");
+		printf("      4. MODUL 4\n");
+		printf("      5. MODUL 5\n");
+		printf("      6. MODUL 6\n");		
+		printf("      7. MODUL 7\n");
+		printf(" MASUKAN (q) UNTUK EXIT\n\n");//pilihan untuk keluar program
+		printf("Masukkan Pilihan Nomor : ");//memasukkan pilihan nomor menu
+		scanf("%c",&brp);//menyimpan pilihan nomor menu ke dalam variabel brp
+		switch(brp)//membuat branching untuk masuk ke dalam menu yang dipilih menggunakan fungsi switch-case-break
+		{
+			case '1'://masuk ke dalam pilihan 1
+				mod1();//masuk ke fungsi modul 1
+				printf("Tekan Enter Untuk Lanjut");
+				getch();// digunakan untuk membaca data karakter. Karakter yang dimasukkan tidak perlu diakhiri dengan penekanan tombol enter.
+				break;
+			case '2'://masuk ke dalam pilihan 2
+				mod2();//masuk ke fungsi modul 2
+				printf("Tekan Enter Untuk Lanjut");
+				getch();// digunakan untuk membaca data karakter. Karakter yang dimasukkan tidak perlu diakhiri dengan penekanan tombol enter.
+				break;
+			case '3'://masuk ke dalam pilihan 3
+				mod3();//masuk ke fungsi modul 3
+				printf("Tekan Enter Untuk Lanjut");
+				getch();// digunakan untuk membaca data karakter. Karakter yang dimasukkan tidak perlu diakhiri dengan penekanan tombol enter.
+				break;
+			case '4'://masuk ke dalam pilihan 4
+				mod4();//masuk ke fungsi modul 4
+				printf("Tekan Enter Untuk Lanjut");
+				getch();// digunakan untuk membaca data karakter. Karakter yang dimasukkan tidak perlu diakhiri dengan penekanan tombol enter.
+				break;
+			case '5'://masuk ke dalam pilihan 5
+				mod5();//masuk ke fungsi modul 5
+				printf("Tekan Enter Untuk Lanjut");
+				getch();// digunakan untuk membaca data karakter. Karakter yang dimasukkan tidak perlu diakhiri dengan penekanan tombol enter.
+				break;
+			case '6'://masuk ke dalam pilihan 6
+				mod6();//masuk ke fungsi modul 6
+				printf("Tekan Enter Untuk Lanjut");
+				getch();// digunakan untuk membaca data karakter. Karakter yang dimasukkan tidak perlu diakhiri dengan penekanan tombol enter.
+				break;
+			case '7'://masuk ke dalam pilihan 7
+				mod7();//masuk ke fungsi modul 7
+				printf("Tekan Enter Untuk Lanjut");
+				getch();// digunakan untuk membaca data karakter. Karakter yang dimasukkan tidak perlu diakhiri dengan penekanan tombol enter.
+				break;
+			default:
+				break;
+		}
+	}while (brp != 'q');
+	return 0;
+}
+
+void pil1();//mendeklarasikan fungsi yang akan digunanakan
+void pil2();//mendeklarasikan fungsi yang akan digunanakan
+void pil3();//mendeklarasikan fungsi yang akan digunanakan
+void pil4();//mendeklarasikan fungsi yang akan digunanakan
+void pil5();//mendeklarasikan fungsi yang akan digunanakan
+void pil6();//mendeklarasikan fungsi yang akan digunanakan
+void pil7();//mendeklarasikan fungsi yang akan digunanakan
+
+void pil1b();
+void pil2b();
+void pil3b();
+void pil4b();
+void pil5b();
+void pil6b();
+void pil7b();
+void pil8b();
+
+void pil1c();
+void pil2c();
+void pil3c();
+void pil4c();
+void pil5c();
+
+void soal1();
+void soal2();
+void soal3();
+void soal4();
+void soal5a();
+void soal5b();
+void mod4();
+
+void pil1e();
+void pil2e();
+void pil3e();
+void pil4e();
+void pil5e();
+void pil6e();
+
+void soal1f();
+void soal2f();
+void soal3af();
+void soal3bf();
+void soal4f();
+void soal5f();
+
+void pil1g();
+void pil2g();
+void pil3g();
+void pil4g();
+void pil5g();
+void pil6g();
+
+//Anya Ningrum-21081010112-B081
+void mod1() //membuat fungsi modul 1
+{
+	int pil; //mendeklarasikan variabel yang akan digunakan
+	system("cls"); //menghapus outputan ketika akan memilih menu kembali
+	printf("======== BRANCHING/PERCABANGAN ========\n\n\n");
+	printf("Menu Program Penerapan Branching : \n\n"); //menampilkan menu-menu pilihan
+	printf("1. Prediksi Jabatan Berdasarkan Nilai Tes\n2. Konversi Angka Menjadi Nama Bulan\n");
+	printf("3. Konversi Nilai Huruf\n4. Bonus Belanja\n5. Rumus Luas Bangun Datar\n");
+	printf("6. Kualifikasi Usia\n7. Permainan Menebak Angka\n");
+	printf("(Masukkan 0 untuk kembali)\n\n");
+	printf("Masukkan Pilihan Menu : ");//memasukkan pilihan menu
+	scanf("%d",&pil);//menyimpan pilihan menu pada variabel pil
+	system("cls");
+	switch(pil)//percabangan switch-case untuk masuk kedalam fungsi tiap menu
+		{
+			case 1:
+				pil1();//masuk kedalam fungsi pil1
+				break;//untuk menutup fungsi case
+			case 2:
+				pil2();//masuk kedalam fungsi pil2
+				break;//untuk menutup fungsi case
+			case 3:
+				pil3();//masuk kedalam fungsi pil3
+				break;//untuk menutup fungsi case
+			case 4:
+				pil4();//masuk kedalam fungsi pil4
+				break;//untuk menutup fungsi case
+			case 5:
+				pil5();//masuk kedalam fungsi pil5
+				break;//untuk menutup fungsi case
+			case 6:
+				pil6();//masuk kedalam fungsi pil6
+				break;//untuk menutup fungsi case
+			case 7:
+				pil7();//masuk kedalam fungsi pil7
+				break;//untuk menutup fungsi case
+			default:
+				break;
+			}
+}
+
+void pil1()//membuat fungsi pilihan 1
+{
+	int nilai; //deklarasi variabel yang akan digunakan
+	printf("masukkan nilai tes = "); //memasukkan nilai
+	scanf("%d",&nilai);//menyimpan nilai dalam variabel nilai
+	printf("\n");
+	
+	if(nilai>=1&&nilai<=5)//melakukan branching sesuai dengan kondisi
+	{
+		printf("Operator");
+	}
+	else if(nilai>=6&&nilai<=8)
+	{
+		printf("Staff");
+	}
+	else if(nilai>=8&&nilai<=10)
+	{
+		printf("Eksekutif");
+	}
+	else if(nilai>=11&&nilai<=13)
+	{
+		printf("Senior Eksekutif");
+	}
+	else if(nilai>=14&&nilai<=16)
+	{
+		printf("Asisten Manager");
+	}
+	else if(nilai>=17&&nilai<=20)
+	{
+		printf("Manager");
+	}
+	else//kondisi untuk pilihan yang salah
+	{
+		printf("inputan salah!");
+	}
+}
+
+void pil2()//membuat fungsi pilihan 2
+{
+	int angka;//mendeklarasikan variabel yang akan digunakan
+	printf("masukkan angka = ");//memasukkan angka
+	scanf("%i",&angka);//menyimpan angka dalam variabel angka
+	
+	if(angka==1)//membuat branching sesuai urutan angka bulan 
+	{
+		printf("Januari");
+	}
+	else if(angka==2)
+	{
+		printf("Februari");
+	}
+	else if(angka==3)
+	{
+		printf("Maret");
+	}
+	else if(angka==4)
+	{
+		printf("April");
+	}
+	else if(angka==5)
+	{
+		printf("Mei");
+	}
+	else if(angka==6)
+	{
+		printf("Juni");
+	}
+	else if(angka==7)
+	{
+		printf("Juli");
+	}
+	else if(angka==8)
+	{
+		printf("Agustus");
+	}
+	else if(angka==9)
+	{
+		printf("September");
+	}
+	else if(angka==10)
+	{
+		printf("Oktober");
+	}
+	else if(angka==11)
+	{
+		printf("November");
+	}
+	else if(angka==12)
+	{
+		printf("Desember");
+	}
+	else//kondisi jika memasukkan selain angka 1-12
+	{
+		printf("inputan salah!");//menampilkan "inputan salah!" jika memasukkan selain angka 1-12
+	}
+}
+
+void pil3()//membuat fungsi pilihan 3
+{
+	int nilai;//mendeklarasikan variabel yang akan digunakan
+	printf("masukkan nilai = ");//memasukkan nilai
+	scanf("%i",&nilai);//menyimpan nilai dalam variabel nilai
+	
+	if(nilai>=80&&nilai<=100)//membuat branching sesuai kondisi nilai
+	{
+		printf("A");
+	}
+	else if(nilai>=65&&nilai<=79)
+	{
+		printf("B");
+	}
+	else if(nilai>=50&&nilai<=64)
+	{
+		printf("C");
+	}
+	else if(nilai>=35&&nilai<=49)
+	{
+		printf("D");
+	}
+	else if(nilai>=0&&nilai<=34)
+	{
+		printf("E");
+	}
+	else//jika kondisi tidak memenuhi
+	{
+		printf("inputan salah!");
+	}
+}
+
+void pil4()//membuat fungsi pilihan 4
+{
+	int total_pembelian,jumlah_barang;//mendeklarasikan variabel yang akan digunakan 
+	printf("total pembelian = ");//memasukkan total pembelian
+	scanf("%i",&total_pembelian);//menyimpan total pembelian dalam variabel total_pembelian
+	printf("jumlah barang belanjaan = ");//memasukkan jumlah barang belanjaan
+	scanf("%i",&jumlah_barang);//menyimpan jumlah barang belanjaan dalam variabel jumlah_barang
+	
+	if(total_pembelian>=500000&&jumlah_barang>5)//membuat branching sesuai kondisi
+	{
+		printf("Selamat Anda Mendapatkan Setrika!");
+	}
+	else if(total_pembelian>=100000&&jumlah_barang>3)
+	{
+		printf("Selamat Anda Mendapatkan Payung!");
+	}
+	else if(total_pembelian>=50000&&jumlah_barang>2)
+	{
+		printf("Selamat Anda Mendapatkan Pena!");
+	}
+	else//jika kondisi tidak terpenuhi
+	{
+		printf("Maaf Anda Tidak Mendapatkan Bonus Pembelanjaan");
+	}
+}
+
+void pil5()//membuat fungsi pilihan 5
+{
+	int pilihan;//mendeklarasikan variabel yang akan diguanakan
+	printf("=====MENU PERHITUNGAN LUAS BANGUN DATAR===== \n");//menampilkan menu perhitungan luas bangun datar
+	printf("1. luas segitiga \n");
+	printf("2. luas persegi \n");
+	printf("3. luas persegi panjang \n");
+	printf ("masukkan pilihan perhitungan luas bangun datar : ");//memasukkan pilihan menu
+	scanf("%i",&pilihan);//memasukkan pilihan menu dalam variabel pilihan
+	switch(pilihan)//membuat brancing menggunakan fungsi switch-case-break
+	{
+		case 1:
+		float alas,tinggi,luas_segitiga;//mendeklarasikan variabel yang akan diguanakan
+		printf("masukkan nilai alas : ");//memasukkan nilai alas
+		scanf("%f",&alas);//memasukkan nilai alas dalam variabel alas
+		printf("masukkan nilai tinggi : ");//memasukkan nilai tinggi
+		scanf("%f",&tinggi);//memasukkan nilai tinggi dalam variabel tinggi
+		luas_segitiga=0.5*alas*tinggi;//menghitung luas segitiga dan memasukkan dalam variabel luas_segitiga
+		printf("Luas Segitiga : %.2f",luas_segitiga);//menampilkan luas segitiga
+		break;//menutup case
+		
+		case 2:
+		float sisi,luas_persegi;//mendeklarasikan variabel yang akan diguanakan
+		printf("masukkan nilai sisi : ");//memasukkan nilai sisi
+		scanf("%f",&sisi);//memasukkan nilai sisi dalam variabel sisi
+		luas_persegi=sisi*sisi;//menghitung luas persegi dan memasukkan dalam variabel luas_persegi
+		printf("Luas Persegi : %.2f",luas_persegi);//menampilkan luas persegi
+		break;//menutup case
+		
+		case 3:
+		float panjang,lebar,luas_persegipanjang;//mendeklarasi variabel yang akan digunakan
+		printf("masukkan nilai panjang : ");//memeasukkan nilai panajang
+		scanf("%f",&panjang);//memasukkan nilai panjang dalam variabel panjang
+		printf("masukkan nilai lebar : ");//memasukkkan nilai lebar
+		scanf("%f",&lebar);//memasukkan nilai lebar pada variabel lebar
+		luas_persegipanjang=panjang*lebar;//menghitung luas persegi panjang dan menyimpan pada variabel luas_persegipanjang
+		printf("Luas Persegi Panjang : %.2f",luas_persegipanjang);//menampilkan luas persegi panjang
+		break;//menutup fungsi case
+	}
+}
+
+void pil6()//membuat fungsi pilihan 5
+{
+	int usia;//mendeklarasikan variabel yang akan digunakan 	
+	printf("masukkan usia Anda : ");//memasukkan usia 
+	scanf("%d",&usia);//menyimpan nilai usia ke dalam variabel usia
+	
+	if(usia>=1&&usia<=16)//membuat branching sesuai dengan kondisi
+	{
+		printf("Anda anak-anak");
+	}
+	else if(usia>=17&&usia<=25)
+	{
+		printf("Anda remaja");	
+	}
+	else if(usia>=26&&usia<45)
+	{
+		printf("Anda dewasa");	
+	}
+	else if(usia>=45)
+	{
+		printf("Anda tua banget");	
+	}
+}
+
+void pil7()//membuat fungsi pilihan 7
+{
+	int n=34;//mendeklarasikan variabel yang akan digunakan
+	int i;//mendeklarasikan variabel yang akan digunakan
+	printf("Anda hanya memiliki 3 kali kesempatan menjawab\n\n");//menampilkan peraturan permainan
+	printf("tebaklah angka sesuai dengan intuisi Anda = ");//memasukkan tebakan angka
+	scanf("%i",&i);//menyimpan tebakan angka ke dalam variabel i
+	printf("\n");
+	if(i==n)//membuat branching untuk mengecek apakah i = n (nilai hasil)
+	{
+		printf("Benar!");//jika kondisi memenuhi akan menampilkan "Benar!"
+	}
+	else//jika kondisi tidak memenuhi
+	{
+		printf("Salah! Kesempatan mejawab anda tinggal 2 \n");//menampilkan informasi kesempatan menjawab
+		printf("Petunjuk = 2 angka yang saling berurutan \n");//menampilkan clue jawaban
+		printf("Tebaklah angka tersebut : ");//memasukkan tebakan angka
+		scanf("%i",&i);//menimpan nilai tebakan angka pada variabel i
+		printf("\n\n");
+		if(i==n)//membuat branching ke 2 untuk mengecek apakah i = n (nilai hasil)
+		{
+			printf("Benar!");//jika kondisi memenuhi akan menampilkan "Benar!"
+		}
+		else//jika kondisi tidak memenuhi
+		{
+			printf("Salah! Kesempatan mejawab anda tinggal 1 \n");//menampilkan informasi kesempatan menjawab
+			printf("Petunjuk = jumlah provinsi di Indonesia \n");//menampilkan clue jawaban
+			printf("Tebaklah angka tersebut : ");//memasukkan nilai tebakan angka
+			scanf("%i",&i);//menimpan nilai tebakan angka pada variabel i
+			printf("\n\n");
+			if(i==n)//membuat branching ke 2 untuk mengecek apakah i = n (nilai hasil)
+			{
+				printf("Benar!");//jika kondisi memenuhi akan menampilkan "Benar!"
+			}
+			else//jika kondisi tidak memenuhi
+			{
+				printf("Maaf, kesempatan menjawab Anda telah habis\n");
+				printf("Jawaban = 34");
+			}
+		}
+	}
+}
+
+
+
+//GILANG ENGGAR S-21081010237-B081
+void mod2()
+{
+	int pil; //deklarasi variabel pilihan soal
+	printf("=======MODUL 2(PERULANGAN)======\n\n");
+	printf("HASIL PEKERJAAN\n\n");
+	//menampilkan pilihan soal perulangan
+	printf("1.menampilkan bilangan genap dengan batasan yang merupakan inputan dari user\n");
+	printf("2.program yang akan menghasilkan karakter ( * ) \n");
+	printf("3.menghitung banyaknya bilangan genap dan ganjil \n");
+	printf("4.program yang dapat membentuk formasi (dalam soal dengan inputan 4\n)");
+	printf("5.program yang dapat membentuk formasi (dalam soal dengan inputan 4\n)");
+	printf("6.program yang dapat membentuk formasi dalam hasil * (dalam soal dengan inputan 4\n)");
+	printf("7.program yang dapat menerima dan menjumlahkan data matriks 2x2 berdasarkan inputan user\n");
+	printf("8.no 3 dari modul 4 dengan memberikan fitur untuk mengulangi proses penghitungan sekali lagi atau tidak.");
+	printf("Masukkan Pilihan soal perulangan : "); //memasukan soal perulangan yang ingin dikerjakan
+	scanf("%d",&pil); //menyimmpan soal  yang ingin dikerjakan atau dipillih
+	system("cls");
+	switch(pil)//pemanggilan ekspresi soal yang dipilih 
+	{
+				case 1: //perintah mengerjakan soal nomer 1 
+				pil1b();
+				break;
+			case 2: //perintah mengerjakan soal nomer 2
+				pil2b();
+				break;
+			case 3: //perintah mengerjakan soal nomer 3
+				pil3b();
+				break;
+			case 4: //perintah mengerjakan soal nomer 4
+				pil4b();
+				break;
+			case 5: // perintah mengerjakan soal nomer 5
+				pil5b();
+				break;
+			case 6: //perintah mengerjekan soal nomer 6
+				pil6b();
+				break;
+			case 7: //perintah mengerjakan soal nomer 7
+				pil7b();
+				break;
+			case 8: //perintah mengerjakan soal nomer 8
+				pil8b();
+				break;
+			default:
+				break;
+	}
+}
+
+void pil1b() //memanggil dan menjalankan pilihan nomer 1 
+{
+	int a,b; //deklarasi variabel a dan b 
+    printf("Mencari angka-angka kelipatan 2\n");
+    printf("---------------------------\n");
+    printf("Masukan batas kelipatan yang diinginkan:",a); //memasukan batas kelipatan yang diinginkan oleh user
+    scanf("%d",&b); //penyimpanan variabel b
+    for(a=1;a<=b;a++) //melakukan pengulangan dengan setiap a akan dikali dengan 2 sampai batas yang telah ditentukan
+    {
+        printf("%d\n",a*2);
+    }
+}
+
+void pil2b() //memanggil dan menjalankan pilihan soal nomer 2
+{
+		int i,j; //deklarasi variabel
+	for(i=1;i<=4;i++) //melakukan pengulangan yang kedua dimana i telah ditentukan=1 dan i sampai dengan 4
+	{
+		for(j=1;j<=i;j++) //melkakukan pengulangan yang pertama dimana j=1 dan outputnya akan berupa * 
+		{
+			printf("*");
+		}
+		printf("\n");
+	}
+}
+
+void pil3b() //memanggil dan menjalankan program 3
+{
+		int n, m, a, b=0, c=0; //deklarasi variabel 
+	printf("Berapa banyak angkanya : "); //menginputkan banyak angka yang akan diinputkan
+	scanf("%i",&n); //menyimpan variabel inputan n
+	printf("\n"); 
+	for(int x=0;x<n;x++) //melakukan pengulangan sampai batas n atau inputan
+	{
+		printf("Masukkan angka: "); //memasukan angka yang ingin diinputkan
+		scanf("%d",&m); //melakukan penyimpanan
+		a=m%2; //melakukan penghitungan data
+		if(a==0){ //dimana menghitung banyak angka genap
+			b=b+1;
+		}else{//dimana menghitung angka ganjil
+			c=c+1;
+		}
+	}
+	printf("\nBanyak Angka genap = %d\n",b); //memanggil hasil sebagai output
+	printf("Banyak Angka ganjil = %d",c);
+}
+void pil4b()//memanggil dan menjalankan program 4
+{
+		int i,j; //deklarasi variabel batas telah ditentukkan 
+	for(i=1;i<=4;i++) //melakukan pengulangan yang bariss (pengulangan kedua)
+	{
+		for(j=1;j<=i;j++) //melakukan pengulangan yang kedua kolom (pengulangan pertama)
+		{
+		printf("%i",i);
+		}
+		printf("\n");
+	}//outputnya akan membentuk hasil yang diinginkan
+
+}
+void pil5b() //memanggil dan menjalankan program 5
+{
+	    int batas, x, y; //deklarasi variabel
+    printf("Masukan batas angka : "); //memasukan batas angka yang ditentukan
+    scanf("%d", &batas);//menyimpan batas yang ditentukan
+
+    printf("\n");
+
+    for (x = 0; x <= batas; x++)//melakukan pengulangan kedua untuk barisnya
+    {
+        for (y = 1; y <= x; y++) //melakukan pengulangan pertama unytuk kolom dengan variabel yang telah ditentukan
+        {
+            printf("%d", y);
+        }
+        printf("\n");
+    }
+
+}
+
+void pil6b() //memanggil dan menjalakan program 6
+{
+		int i,j; //deklarasi variabel 
+	for(i=4;i>=1;i--) //melakukan pengulangan yang kedua
+	{
+		for(j=1;j<=i;j++) //melakukan pengulangan pertama dengan outputnya nanti *
+		{
+			printf("*");
+		}
+		printf("\n");
+	}
+
+}
+void pil7b() //memanggil dan menjalankan program 5
+{
+	int a, b, c, d, matriks1[50][50], matriks2[50][50], total[10][10]; //deklarasi variabel
+	printf("masukan baris matriks:"); //input jumlah baris matriks
+	scanf("%d", &c); //menyimpan
+	printf("masukan kolom matriks:"); //input jumlah kolom
+	scanf("%d", &d); //menyimpan
+	
+	printf("masukan elemen matriks1 mulai dari baris 1 sampai baris terahir: \n"); //memasukan elemmen matriks dari baris 1
+	for (a=0; a<c; a++) //melakukan pengulangan untuk baris nya 
+	{
+		for(b=0; b<d; b++) //mellakukan pengulangan pertama untuk kolom 
+		{
+			scanf("%d", &matriks1[a][b]); //menyimpan inputan matriks
+		}
+		printf("\n");
+	}
+	printf("masukan elemen matriks 2 mulai baris 1 sampai terahir  : \n"); //masukan elemen matrik kedua
+	for(a=0; a<c; a++) //dilakukan pengulangan kedua untuk baris matriks
+	{
+		for(b=0; b<d; b++) //dilakukan pengulangan pertama untuk kolom
+		{
+			scanf("%d", &matriks2[a][b]);
+		}
+		printf("\n");
+	}
+	printf("hasil jumlah: \n"); //melakukan penjumlahan 2 matriks yang telah diinputkan
+	for(a=0; a<c; a++)//pengulangan untuk penjumlahan baris (pengulangan ke-2)
+		{
+		for(b=0; b<d; b++) //pengulangan dilakukan penjumlahan kolom sesuai denggan rumus penjumlahan matriks
+		{
+			total[a][b]=matriks1[a][b]+matriks2[a][b];
+			printf("%d \t", total[a][b]);
+		}
+		printf("\n");
+	}
+
+}
+void pil8b() //memanggil dan menjalankan soal nomer 8
+{
+	
+	int a,b;
+	int suhu[7],kelembaban[7];
+	//deklarasi variabel
+	printf("Suhu Rumah Kaca\n");
+	for(a=0;a<=6;a++) //pengulangan untuk inputan suhu
+	{
+		printf("Hari ke-%i : ",a+1); //hari sampai ke-7
+		scanf("%i",&suhu[a]); //menyimpan inputan suhu
+	}
+	printf("\n"); 
+	printf("Kelembaban Rumah Kaca\n");
+	for(b=0;b<=6;b++) //pengulangan untuk kelembapan
+	{
+		printf("Hari ke-%i : ",b+1); //inputan untuk hari 1-7
+		scanf("%i",&kelembaban[b]);//menyimpan inputam
+	}
+	
+	//output
+	printf("Suhu Rumah Kaca hari 1-7 \n"); //menampilkan hasil outputan
+	for(a=0;a<=6;a++) //pengulangan untuk outputan suhu
+	{
+		printf("%i \n",suhu[a]); //memanggil outputan suhu yang dimasukan tadi
+
+	}
+	printf("\n");
+	printf("Kelembaban Rumah Kaca hari 1-7 \n"); //menampilkan hasil outputan kelembapan
+	for(b=0;b<=6;b++) //pengulangan untuk hasil kelembapan
+	{
+		printf("%i \n",kelembaban[b]); //memanggil outputan kelembapan tadi
+	}
+	printf("\n");
+}
+
+//
+//VOLEM ALVARO AZIRA - 21081010003 - MODUL 3 - b081
+//
+void mod3(){// fungsi modul ke3
+	int pil;
+		system("cls");
+		printf("======== PROSEDUR/FUNGSI ========\n\n\n");
+		printf("Menu Program Penerapan Fungsi : \n\n");
+		printf(" 1. MENGHITUNG VOLUME BALOK\n");
+		printf(" 2. MENGKONVERSI NILAI KE HURUF\n");
+		printf(" 3. MENAMPILKAN DERET FIBONANCI\n");
+		printf(" 4. MENAMPILKAN BILANGAN PRIMA\n");
+		printf(" 5. MENGINPUT DATA MAHASISWA \n");
+		printf("(Masukkan 0 untuk kembali)\n\n");
+		printf("Masukkan Pilihan Menu : ");
+		scanf("%i",&pil);
+		system("cls");
+		switch(pil)// switch case pil sesuai inputan
+		{
+			case 1:
+				pil1c();// memanggil fungsi no 1
+				break;
+			case 2:
+				pil2c();// memanggil fungsi no 2
+				break;
+			case 3:
+				pil3c();// memanggil fungsi no 3
+				break;
+			case 4:
+				pil4c();// memanggil fungsi no 4
+				break;
+			case 5:
+				pil5c();// memanggil fungsi no 5
+				break;
+			default:
+				break;
+		}
+}
+
+// nomor 1
+// fungsi rumus volume balok
+float p,l,t,rumus;
+void hasil()
+{
+	rumus = p*l*t;// rumus
+	printf("Hasilnya adalah = %.f",rumus);
+}
+//
+void pil1c()// fungsi no 1
+{
+	printf("--MENGHITUNG VOLUME BALOK-- \n\n"); // judul
+	printf("Masukkan p = ");
+	scanf("%f",&p);
+	printf("Masukkan l = ");
+	scanf("%f",&l);
+	printf("Masukkan t = ");
+	scanf("%f",&t);
+	printf("\n");
+	hasil();
+}
+
+// nomor 2
+// fungsi nomor 2
+int nilai;
+void konversi()// fungsi untuk mengkonversi angka ke huruf
+{
+	if(nilai>=80){ // percabangan untuk mengecek angka
+	printf("A");
+	}else if(nilai>=75){
+	printf("A-");
+	}else if(nilai>=70){
+	printf("B+");
+	}else if(nilai>=66){
+	printf("B");
+	}else if(nilai>=62){
+	printf("B-");
+	}else if(nilai>=58){
+	printf("C+");
+	}else if(nilai>=55){
+	printf("C");
+	}else if(nilai>=51){
+	printf("C-");
+	}else{
+	printf("nilai inputan salah");
+	}
+}
+//
+void pil2c()// fungsi no 2
+{
+	printf("--MENGKONVERSI NILAI KE HURUF--\n\n"); // judul
+	printf("masukkan nilai mahasiswa : ");
+	scanf("%i",&nilai); // inputan nilai
+	printf("Nilai Mahasiswa : ");
+	konversi();// memanggil fungsi konversi
+}
+
+
+// nomor 3
+//fungsi untuk nomor 3, menampilkan deret fibonanci
+int batas, deret[100], total=0,i;
+int fibonanci()
+{
+	for(i=0;i<batas;i++)// looping
+	{	
+       	if(i<2){
+           	deret[i]=1;
+       	}else{
+           	deret[i]=deret[i-2]+deret[i-1];
+       	}
+		total= total + deret[i];
+    	printf("%d ", deret[i]);
+	}
+	printf("\nTotal deret : %d", total); // 
+}
+//
+void pil3c()// fungsi no 3
+{
+	printf("--MENAMPILKAN DERET FIBONANCI--\n\n");
+	printf("Masukan jumlah deret : ");
+    scanf("%d", &batas);
+    printf("Deret fibonanci : ");  
+    fibonanci();// memanggil fungsi fibonaci
+}
+
+
+// nomor 4
+//fungsi untuk nomor 4, untuk mencari bilangan prima
+int bil_prima(int n){
+	int k=2, output=0;	
+	while (output < n)
+	{
+		int x = 0;
+		int i;
+		for (i=1; i<=k; i++)
+		{
+			if (k%i == 0)
+			{
+				x++;
+			}
+		}
+		if (x == 2)
+		{
+			printf("%i ",k);
+			output++;
+		}
+		k++;
+	}
+}
+// fungsi no 4
+void pil4c(){
+	int n;
+	printf("--MENAMPILKAN BILANGAN PRIMA--\n\n");	
+	printf("n: ");
+	scanf("%i", &n);
+	bil_prima(n); //memanggil fungsi bil_prima
+}
+
+//
+//nomor 5
+char x [50];
+char y [11];
+char z [20];
+
+// fungsi untuk nomor 5, untuk mengoutput data mahasiswa
+int data()
+{
+	printf("       DATA MAHASISWA       \n");
+	printf("============================\n");
+	printf("NAMA\t= %s\n",x);
+	printf("NPM\t= %s\n",y);
+	printf("JURUSAN\t= %s\n",z);
+	printf("============================\n");;
+	getch();
+	system("cls");
+}
+void pil5c() // fungsi no 5
+{
+	int i,j;
+	printf("--MENGINPUT DATA MAHASISWA--\n\n");
+	printf("Berapa Mahasiswa = ");
+	scanf("%d",&j);
+	fflush(stdin);
+	
+	for(i=1;i<=j;i++){
+		printf("\nMahasiswa ke-%d \n",i);
+		printf("Siapakan nama anda? ");
+		gets(x);
+		printf("Berapaa NPM anda? ");
+		gets(y);
+		printf("Apa jurusan anda? ");
+		gets(z);
+		printf("\n\n");
+		data();// memanggil fungsi data
+	}
+}
+
+
+
+//VIERI ARIEF MAULANA-21081010140-B081
+void mod4()
+{
+	int menu;
+	system("cls");
+ 	printf ("MENU MODUL 4 \n");
+	printf("1. Soal 1\n");
+	printf("2. Soal 2\n");
+	printf("3. Soal 3\n");
+	printf("4. Soal 4\n");
+	printf("5. Soal 5 A\n");
+	printf("6. Soal 5 B\n");
+	printf("(Masukkan 0 untuk kembali)\n");
+	printf("========================\n");
+	printf("Pilih Menu: "); scanf("%d", &menu); //menginput menu yang ingin di pilih
+	printf("\n");	
+	system("cls");
+	
+	switch(menu) //fungsi switch untuk memilih menu
+	{
+		case 1:
+			soal1();//masuk kedalam fungsi soal 1
+			break;
+		case 2:
+			soal2(); //masuk kedalam fungsi soal 2
+			break;
+		case 3:
+			soal3(); //masuk kedalam fungsi soal 3
+			break;
+		case 4:
+			soal4(); //masuk kedalam fungsi soal 4
+			break;
+		case 5:
+			soal5a(); //masuk kedalam fungsi soal 5a
+			break;
+		case 6:
+			soal5b(); //masuk kedalam fungsi soal 5b
+			break;
+		default:
+			break;
+	}	
+	system("cls");
+}
+ 
+ void soal1() //membuat fungsi soal1
+ {
+ 	printf("Soal 1 Modul 4\n\n");
+ 	
+ 	int data [50]; //mendeklarasikan variabel dengan tipe data int
+	int a,b;
+	int max,min;
+	float jumlah,average; //mendeklarasikan variabel dengan tipe data float
+	
+	printf("Jumlah Bilangan yang Dimasukkan: "); //menginputkan jumlah bilangan yang ingin di inputkan
+	scanf("%d",&a);
+	printf("\n");
+	 
+	for(b=1;b<=a;b++){ //fungsi ini melakukan perulangan hingga nilai kurang dari = a untuk menginputkan nilai bilangan, jika nilai bernilai true akan terus menjalankan perulangan dan jika nilai false akan berhenti perulangan tersebut
+		printf("Bilangan Ke-%d:",b); //menginputkan bilangan
+	 	scanf("%d",&data [b]);
+	}
+	for(b=1;b<=a;b++){ // fungsi untuk menjumlahkan data yang di unputkan menggunakan perulangan for, jika nilai bernilai true akan terus menjalankan perulangan dan jika nilai false akan berhenti perulangan tersebut
+	 	jumlah += data[b]; //menjumlahkan data dari index data [b]
+	}
+	max=data[1]; 
+	min=data[1];
+	 
+	for(b=1;b<=a;b++){ //fungsi untuk mensotir nilai terbesar dan terkecil menggunakan perulangan for, jika nilai bernilai true akan terus menjalankan perulangan dan jika nilai false akan berhenti perulangan tersebut
+		if(data[b]>=max){ // fungsi if else untuk menentukan nilai yang di inputkan sebelumnya apakah terbesar
+	 	max=data[b];
+	 	}else if (data[b]<=min){ //fungsi apabila nilai tersebut merupakan nilai terkecil
+			min=data[b];
+ 		}
+	}
+
+	average = jumlah/a; //fungsi untuk menghitung rata rata bilangan yang di inputkan
+	printf("\nRata-rata = %.2f", average); //menampilkan rata rata bilangan
+	printf("\nNilai Tertinggi:%d",max); //menampilkan nilai terbesar
+	printf("\nNilai Terendah:%d",min); //menampilkan nilai terkecil
+ 	
+ 	printf("\n\n");
+ }
+ 
+ void soal2() //membuat fungsi soal2
+ {
+ 	printf("Soal 2 Modul 4\n\n");
+ 	int a,b; //mendeklarasikan variabel
+	float suhu[7],kelembaban[7];
+	printf("Suhu Rumah Kaca\n");
+	for(a=0;a<=6;a++) //fungsi perulangan for dari a = 0 hingga a <= 6.
+	{
+		printf("Hari ke-%i : ",a+1); //menginput suhu dari hari 1 hingga 7
+		scanf("%f",&suhu[a]);
+	}
+	printf("\n");
+	printf("Kelembaban Rumah Kaca\n");
+	for(b=0;b<=6;b++) //fungsi perulangan for dari b = 0 hingga b <= 6, jika nilai bernilai true akan terus menjalankan perulangan dan jika nilai false akan berhenti perulangan tersebut
+	{
+		printf("Hari ke-%i : ",b+1);
+		scanf("%f",&kelembaban[b]); //menginput kelembaman dari hari 1 hingga 7
+	}
+	printf("\n");
+	
+	//output
+	printf("Suhu Rumah Kaca hari 1-7 \n");
+	for(a=0;a<=6;a++) //fungsi perulangan for dari a = 0 hingga a <= 6, jika nilai bernilai true akan terus menjalankan perulangan dan jika nilai false akan berhenti perulangan tersebut
+	{
+		printf("%i \n",suhu[a]); //menampilkan suhu dari hari 1 - 7
+
+	}
+	printf("\n");
+	printf("Kelembaban Rumah Kaca hari 1-7 \n");
+	for(b=0;b<=6;b++) //fungsi perulangan for dari b = 0 hingga b <= 6, jika nilai bernilai true akan terus menjalankan perulangan dan jika nilai false akan berhenti perulangan tersebut
+	{
+		printf("%i \n",kelembaban[b]); //menampilkan kelembaman dari hari 1 - 7
+	}
+ 	printf("\n\n");
+ }
+ 
+ void soal3() //membuat fungsi soal3
+ {
+ 	printf("Soal 3 Modul 4\n\n");
+ 	
+	 int a,b,suhu[7],kelembapan[7]; //mendeklarasikan variabel tipe data int
+	float jumlah,average,jumlah2,average2; //mendeklarasikan variabel tipe data float
+	printf("Suhu & Kelembapan Rumah Kaca\n");
+		
+	for(a=1;a<=7;a++) //fungsi perulangan for dari a = 1 hingga a <= 7, jika nilai bernilai true akan terus menjalankan perulangan dan jika nilai false akan berhenti perulangan tersebut
+	{
+		printf("Hari %i :\n",a);
+		scanf("%i %i",&suhu[a],&kelembapan[b]); //menginputkan suhu dan kelembapan selama 7hari 
+		jumlah += suhu[a]; //menjumlah total seluruh suhu
+		jumlah2 += kelembapan[b]; //menjumlah total seluruh kelembapan
+		
+	}
+	printf("\n");
+	average = jumlah/7; //fungsi membuat rata rata suhu
+	printf("Rata-rata suhu = %.2f\n", average); //menampilkan rata rata suhu
+	average2 = jumlah2/7; //fungsi membuat rata rata kelembapan
+	printf("Rata-rata kelembapan = %.2f\n", average2); //menampilkan rata rata kelembapan
+ 	printf("\n\n");
+ }
+ 
+ void soal4() //membuat fungsi soal4
+ {
+ 	printf("Soal 4 Modul 4\n\n");
+ 	
+ 	int fn[50], fn1, fn2, m, n, o; //mendeklarasikan variabel tipe data int
+	printf("Batas Bilangan Fibonaci :");
+	scanf("%i",&n); //menginputkan batas bilangan fibonaci
+	fn1 = 1;  //mendeklarasikan variabel = 1
+	fn2 = 1;	
+	printf("%d ", fn1);	
+	printf("%d ", fn2);	
+	fn[o] = fn1 + fn2; //fungsi bilangan fibonaci dari fn[0]
+	for(m=1;m<n;m++) //fungsi for dari m=1 hingga m,n untuk memberikan batas pada bilangan fibonaci, jika nilai bernilai true akan terus menjalankan perulangan dan jika nilai false akan berhenti perulangan tersebut
+	{		
+		printf("%d ", fn[o] ); //menampilkan bilangan fibonaci
+		fn2 = fn1; //meggantikan nilai fn1 dengan fn2
+		fn1 = fn[o]; //meggantikan nilai fn[0] dengan fn1		
+		fn[o] = fn1 + fn2; //mmenjumlahkan fn1 + fn2 = fn[0] (hasil bilangan fibonaci yang baru)
+	}	
+	printf("\n\n");	
+ }
+ 
+ void soal5a() //membuat fungsi soal5a
+ {
+ 	printf("Soal 5 A Modul 4\n\n");
+ 	
+ 	int harga,jumlah,pembayaran,i,n; //mendeklarasikan variabel tipe data int
+	float total; //mendeklarasikan variabel tipe data float
+	char barang [20]; //mendeklarasikan variabel tipe data char
+	
+	printf("masukkan = ");
+	scanf("%i",&n); //menginputkan jumlah transaksi yang ingin di lakukan
+	fflush(stdin);
+	for(i=0;i<n;i++) //melakukan perulangan for dari i=0 hingga i<n , jika nilai bernilai true akan terus menjalankan perulangan dan jika nilai false akan berhenti perulangan tersebut
+	{
+		fflush(stdin);
+		printf ("nama barang : "); //menginputkan nama barang
+		gets(barang);
+		printf ("masukan harga : Rp."); //menginputkan harga barang
+		scanf ("%d", &harga);
+		printf ("masukan jumlah : "); //menginputkan jumlah barang
+		scanf (" %d", &jumlah); 
+		
+		total = harga*jumlah; //rumus menghitung total harga
+		printf ("\n");
+	}
+	
+	printf ("=====================================\n");
+	printf ("|         Total Pembayaran          |\n");
+	printf ("=====================================\n");
+	printf ("barang\t\t\t\t%sx%d\n", barang, jumlah); //menampilkan nama barang, jumlah barang, dan total harga
+	printf ("total harga\t\t\t%.f", total);
+	printf ("\n\n");
+	printf ("|            Terima Kasih           |\n");
+	printf ("=====================================\n");
+ 	printf("\n\n");
+ }
+ 
+ void soal5b() //membuat fungsi soal5b
+ {
+ 	printf("Soal 5 B Modul 4\n\n");
+ 	
+	 long int total=0; //mendeklarasikan variabel tipe data int
+	int n;
+	
+	printf("Beli Berapa Barang : "); 
+	scanf("%d", &n); //menginputkan berang barang yang ingin di beli
+	
+	long int item[n],jumlah[n];
+
+	for(int i=1;i<=n;i++){ //melakukan perulangan for dari i=1 hingga i<n, jika nilai bernilai true akan terus menjalankan perulangan dan jika nilai false akan berhenti perulangan tersebut
+		printf("\nBarang ke-%i\n",i);
+		printf("Harga Barang  : Rp."); //menginputkan harga barang
+		scanf("%li", &item[i]);
+		printf("Banyak Barang : "); //menginputkan jumlah barang
+		scanf("%li", &jumlah[i]);
+		
+		total+=item[i]*jumlah[i]; //menginputkan total harga barang
+	}
+	printf("\n");
+	printf("======APOTEK SUKA MAJU======\n\n");
+	for(int i=1;i<=n;i++){ //melakukan perulangan for dari i=1 hingga 1<=n, jika nilai bernilai true akan terus menjalankan perulangan dan jika nilai false akan berhenti perulangan tersebut
+		printf("Harga barang ke-%d : %li x %d",i,item[i],jumlah[i]); //mencetak harga barang, jumlah transaksi, dan total barang
+		printf("\n");
+	}
+	printf("Estimasi total biaya : %li",total); //menampilkan total harga
+ 	printf("\n\n");
+ }
+
+ 
+//ANYA NINGRUM N-21081010112-B081
+void mod5()//membuat fungsi modul 5
+{
+	int pil;//mendeklarasikan variabel yang akan digunakan
+	system ("cls");//menghapus data yang telah dijalankan tanpa harus menutup program
+	printf("======== BRANCHING/PERCABANGAN ========\n\n\n");//menampilkan menu yang dapat dipilih
+	printf("Menu Program Penerapan Branching : \n\n");
+	printf("1. Konversi Angka Menjadi Nama Bulan\n2. Kualifikasi Usia\n");
+	printf("3. Konversi Nilai Mahasiswa\n4. Permainan Menebak Angka\n");
+	printf("5. Rumus Luas Bangun Datar(case break)\n6. Rumus Luas Bangun Datar(if-else)\n");
+	printf("(Masukkan 0 untuk kembali)\n\n");//pilihan keluar dari fungsi modul 5
+	printf("Masukkan Pilihan Menu : ");//memasukkan pilihan menu
+	scanf("%d",&pil);//menyimpan pilihan menu dalam variabel 
+	system("cls");//menghapus data yang telah dijalankan tanpa harus menutup program
+	switch(pil){//percabangan switch-case untuk masuk kedalam fungsi tiap men
+				case 1:
+				pil1e();//masuk kedalam fungsi pil1e
+				break;//untuk menutup fungsi case
+			case 2:
+				pil2e();//masuk kedalam fungsi pil2e
+				break;//untuk menutup fungsi case
+			case 3:
+				pil3e();//masuk kedalam fungsi pil3e
+				break;//untuk menutup fungsi case
+			case 4:
+				pil4e();//masuk kedalam fungsi pil4e
+				break;//untuk menutup fungsi case
+			case 5:
+				pil5e();//masuk kedalam fungsi pil5e
+				break;//untuk menutup fungsi case
+			case 6:
+				pil6e();//masuk kedalam fungsi pil6e
+				break;//untuk menutup fungsi case
+			default:
+				break;
+	}
+}
+
+void pil1e()//membuat fungsi pil1e
+{
+	int angka;//mendeklarasikan variabel yang akan digunakan
+	printf("masukkan angka = ");//memasukkan nilai angka
+	scanf("%i",&angka);//menyimpan nilai angka ke dalam variabel angka
+	
+	if(angka==1)//melakukan branching sesuai kondisi
+	{
+		printf("Januari");
+	}
+	else if(angka==2)
+	{
+		printf("Februari");
+	}
+	else if(angka==3)
+	{
+		printf("Maret");
+	}
+	else if(angka==4)
+	{
+		printf("April");
+	}
+	else if(angka==5)
+	{
+		printf("Mei");
+	}
+	else if(angka==6)
+	{
+		printf("Juni");
+	}
+	else if(angka==7)
+	{
+		printf("Juli");
+	}
+	else if(angka==8)
+	{
+		printf("Agustus");
+	}
+	else if(angka==9)
+	{
+		printf("September");
+	}
+	else if(angka==10)
+	{
+		printf("Oktober");
+	}
+	else if(angka==11)
+	{
+		printf("November");
+	}
+	else if(angka==12)
+	{
+		printf("Desember");
+	}
+	else//jika kondisi tidak memenuhi
+	{
+		printf("inputan salah!");
+	}
+}
+
+void pil2e()//membuat fungsi pil2e
+{
+	int usia;//mendeklarasikan variabel yang akan digunakan	
+	printf("masukkan usia Anda : ");//memasukkan usia
+	scanf("%d",&usia);//menyimpan usia ke dalam variabel usia
+	
+	if(usia>=1&&usia<=16)//melakukan branching sesuai kondisi
+	{
+		printf("Anda anak-anak");
+	}
+	else if(usia>=17&&usia<=25)
+	{
+		printf("Anda remaja");	
+	}
+	else if(usia>=26&&usia<45)
+	{
+		printf("Anda dewasa");	
+	}
+	else if(usia>=45)
+	{
+		printf("Anda tua banget");	
+	}
+}
+
+void pil3e()//membuat fungsi pil3e
+{
+	int nilai;//mendeklarasikan variabel yang akan digunakan	
+	printf("masukkan nilai = ");//memasukkan nilai
+	scanf("%i",&nilai);//menyimpan nilai ke dalam variabel nilai
+	
+	if(nilai>=80&&nilai<=100)//melakukan branching sesuai kondisi
+	{
+		printf("A");
+	}
+	else if(nilai>=65&&nilai<=79)
+	{
+		printf("B");
+	}
+	else if(nilai>=50&&nilai<=64)
+	{
+		printf("C");
+	}
+	else if(nilai>=35&&nilai<=49)
+	{
+		printf("D");
+	}
+	else if(nilai>=0&&nilai<=34)
+	{
+		printf("E");
+	}
+	else//jika kondisi tidak memenuhi
+	{
+		printf("inputan salah!");
+	}
+}
+
+void pil4e()//membuat fungsi pil4e
+{
+	int n=34;//mendeklarasikan variabel yang akan digunakan
+	int i;//mendeklarasikan variabel yang akan digunakan
+	printf("Anda hanya memiliki 3 kali kesempatan menjawab\n\n");//menampilkan peraturan permainan
+	printf("tebaklah angka sesuai dengan intuisi Anda = ");//memasukkan tebakan angka
+	scanf("%i",&i);//menyimpan tebakan angka ke dalam variabel i
+	printf("\n");
+	if(i==n)//membuat branching untuk mengecek apakah i = n (nilai hasil)
+	{
+		printf("Benar!");//jika kondisi memenuhi akan menampilkan "Benar!"
+	}
+	else//jika kondisi tidak memenuhi
+	{
+		printf("Salah! Kesempatan mejawab anda tinggal 2 \n");//menampilkan informasi kesempatan menjawab
+		printf("Petunjuk = 2 angka yang saling berurutan \n");//menampilkan clue jawaban
+		printf("Tebaklah angka tersebut : ");//memasukkan tebakan angka
+		scanf("%i",&i);//menimpan nilai tebakan angka pada variabel i
+		printf("\n\n");
+		if(i==n)//membuat branching ke 2 untuk mengecek apakah i = n (nilai hasil)
+		{
+			printf("Benar!");//jika kondisi memenuhi akan menampilkan "Benar!"
+		}
+		else//jika kondisi tidak memenuhi
+		{
+			printf("Salah! Kesempatan mejawab anda tinggal 1 \n");//menampilkan informasi kesempatan menjawab
+			printf("Petunjuk = jumlah provinsi di Indonesia \n");//menampilkan clue jawaban
+			printf("Tebaklah angka tersebut : ");//memasukkan nilai tebakan angka
+			scanf("%i",&i);//menimpan nilai tebakan angka pada variabel i
+			printf("\n\n");
+			if(i==n)//membuat branching ke 2 untuk mengecek apakah i = n (nilai hasil)
+			{
+				printf("Benar!");//jika kondisi memenuhi akan menampilkan "Benar!"
+			}
+			else//jika kondisi tidak memenuhi
+			{
+				printf("Maaf, kesempatan menjawab Anda telah habis\n");
+				printf("Jawaban = 34");
+			}
+		}
+	}
+}
+
+void pil5e()//membuat fungsi pil5e
+{
+int pilihan;//mendeklarasikan variabel yang akan diguanakan
+	printf("=====MENU PERHITUNGAN LUAS BANGUN DATAR===== \n");//menampilkan menu perhitungan luas bangun datar
+	printf("1. luas segitiga \n");
+	printf("2. luas persegi \n");
+	printf("3. luas persegi panjang \n");
+	printf ("masukkan pilihan perhitungan luas bangun datar : ");//memasukkan pilihan menu
+	scanf("%i",&pilihan);//memasukkan pilihan menu dalam variabel pilihan
+	switch(pilihan)//membuat brancing menggunakan fungsi switch-case-break
+	{
+		case 1:
+		float alas,tinggi,luas_segitiga;//mendeklarasikan variabel yang akan diguanakan
+		printf("masukkan nilai alas : ");//memasukkan nilai alas
+		scanf("%f",&alas);//memasukkan nilai alas dalam variabel alas
+		printf("masukkan nilai tinggi : ");//memasukkan nilai tinggi
+		scanf("%f",&tinggi);//memasukkan nilai tinggi dalam variabel tinggi
+		luas_segitiga=0.5*alas*tinggi;//menghitung luas segitiga dan memasukkan dalam variabel luas_segitiga
+		printf("Luas Segitiga : %.2f",luas_segitiga);//menampilkan luas segitiga
+		break;//menutup case
+		
+		case 2:
+		float sisi,luas_persegi;//mendeklarasikan variabel yang akan diguanakan
+		printf("masukkan nilai sisi : ");//memasukkan nilai sisi
+		scanf("%f",&sisi);//memasukkan nilai sisi dalam variabel sisi
+		luas_persegi=sisi*sisi;//menghitung luas persegi dan memasukkan dalam variabel luas_persegi
+		printf("Luas Persegi : %.2f",luas_persegi);//menampilkan luas persegi
+		break;//menutup case
+		
+		case 3:
+		float panjang,lebar,luas_persegipanjang;//mendeklarasi variabel yang akan digunakan
+		printf("masukkan nilai panjang : ");//memeasukkan nilai panajang
+		scanf("%f",&panjang);//memasukkan nilai panjang dalam variabel panjang
+		printf("masukkan nilai lebar : ");//memasukkkan nilai lebar
+		scanf("%f",&lebar);//memasukkan nilai lebar pada variabel lebar
+		luas_persegipanjang=panjang*lebar;//menghitung luas persegi panjang dan menyimpan pada variabel luas_persegipanjang
+		printf("Luas Persegi Panjang : %.2f",luas_persegipanjang);//menampilkan luas persegi panjang
+		break;//menutup fungsi case
+	}
+}
+
+
+void pil6e()//membuat fungsi pil6e
+{
+	int menu;//mendeklarasi variabel yang akan digunakan
+	printf("~~MENU~~\n");//menampilkan menu perhitungan luas bangun datar
+	printf("1. Luas Segitiga\n");
+	printf("2. Luas Persegi\n");
+	printf("3. Luas Persegi Panjang\n");
+	printf("pilih menu perhitungan : ");//memasukkan pilihan menu
+	scanf("%i",&menu);//memasukkan pilihan menu dalam variabel menu
+	
+	if(menu==1)//membuat brancing menggunakan fungsi if-else
+	{
+		float alas,tinggi,luas_segitiga;//mendeklarasikan variabel yang akan diguanakan
+		printf("masukkan nilai alas : ");//memasukkan nilai alas
+		scanf("%f",&alas);//memasukkan nilai alas dalam variabel alas
+		printf("masukkan nilai tinggi : ");//memasukkan nilai tinggi
+		scanf("%f",&tinggi);//memasukkan nilai tinggi dalam variabel tinggi
+		luas_segitiga=0.5*alas*tinggi;//menghitung luas segitiga dan memasukkan dalam variabel luas_segitiga
+		printf("Luas Segitiga : %.2f",luas_segitiga);//menampilkan luas segitiga
+	}
+	else if(menu==2)
+	{
+		float sisi,luas_persegi;//mendeklarasikan variabel yang akan diguanakan
+		printf("masukkan nilai sisi : ");//memasukkan nilai sisi
+		scanf("%f",&sisi);//memasukkan nilai sisi dalam variabel sisi
+		luas_persegi=sisi*sisi;//menghitung luas persegi dan memasukkan dalam variabel luas_persegi
+		printf("Luas Persegi : %.2f",luas_persegi);//menampilkan luas persegi
+	}
+	else if(menu==3)
+	{
+		float panjang,lebar,luas_persegipanjang;//mendeklarasi variabel yang akan digunakan
+		printf("masukkan nilai panjang : ");//memeasukkan nilai panajang
+		scanf("%f",&panjang);//memasukkan nilai panjang dalam variabel panjang
+		printf("masukkan nilai lebar : ");//memasukkkan nilai lebar
+		scanf("%f",&lebar);//memasukkan nilai lebar pada variabel lebar
+		luas_persegipanjang=panjang*lebar;//menghitung luas persegi panjang dan menyimpan pada variabel luas_persegipanjang
+		printf("Luas Persegi Panjang : %.2f",luas_persegipanjang);//menampilkan luas persegi panjang
+	}
+	else//jika kondisi tidak memenuhi
+	{
+		printf("inputan salah!");
+	}
+}
+
+//VIERI ARIEF MAULANA-21081010140-B081
+void mod6()
+{
+	int menu; //mendeklarasikan variabel tipe data int
+	system ("cls");
+ 	printf ("MENU MODUL 6 \n");
+ 	
+ 		printf("1. Soal 1\n");
+		printf("2. Soal 2\n");
+		printf("3. Soal 3a\n");
+		printf("4. Soal 3b\n");
+		printf("5. Soal 4\n");
+		printf("6. Soal 5\n");
+		printf("7. Keluar\n");
+		printf("========================\n");
+		printf("Pilih Menu: "); scanf("%d", &menu); //menginputkan menu yang ingin di pilih
+		printf("\n");	
+ 		system("cls");
+ 		
+ 		switch(menu)  //fungsi switch untuk memilih menu
+		 {
+			case 1:
+				soal1f(); //masuk kedalam fungsi soal 1f
+				break;
+			case 2:
+				soal2f(); //masuk kedalam fungsi soal 2f
+				break;
+			case 3:
+				soal3af(); //masuk kedalam fungsi soal 3af
+				break;
+			case 4:
+				soal3bf(); //masuk kedalam fungsi soal 3bf
+				break;
+			case 5:
+				soal4f(); //masuk kedalam fungsi soal 4f
+				break;
+			case 6:
+				soal5f(); //masuk kedalam fungsi soal 5f
+				break;
+			default:
+				break;
+		}	
+}
+
+void soal1f()  //membuat fungsi soal1f
+{
+	printf("Soal 1 Modul 6\n\n");
+	
+	char nama[100]; //mendeklarasikan variabel tipe data char
+	double no_ktp; //mendeklarasikan variabel tipe data doubel
+	int presiden; //mendeklarasikan variabel tipe data int
+	
+	printf ("masukan nama anda : ");
+	scanf ("%s",nama);	//menginputkan nama 
+	
+	printf ("masukan no ktp anda : ");
+	scanf ("%lf",&no_ktp);	//menginputkan no ktp	
+	
+	printf ("anda memilih no 1.Jokowi 2.Prabowo : ");
+	scanf ("%d",&presiden); //menginputkan presiden yang ingin dipilih
+	
+	printf ("nama anda = %s \n", nama); //menampilkan nama
+	printf ("no KTP anda = %.lf \n", no_ktp); //menampilkan no ktp
+	
+	if (presiden == 1) //melakukan percabangan if else jika memilih 1 maka akan masuk ke presiden == 1
+	{
+		printf ("anda memilih Presiden 1.Jokowi");	//mencetak anda memilih presiden jokowi
+	}
+		else if (presiden ==2) //melakukan percabangan if else jika memilih 2 maka akan masuk ke presiden == 2
+		{
+		printf ("anda memilih Presiden 2.Prabowo"); //mencetak anda memilih presiden Prabowo
+		}
+	
+	else { //melakukan percabangan if else jika memilih angka selain 1 dan 2
+		printf ("anda menginput no yang salah"); //menalpilkan no yang anda input salah
+	}
+	printf("\n\n");
+}
+
+void soal2f() //membuat fungsi soal2f
+{
+	printf("Soal 2 Modul 6\n\n");
+	
+	char a[20]; //inisialisasi tipe data variable char dengan jumlah elemen 20
+	int jmlh,b,c; 
+	
+	printf("Masukkan Jumlah Karakter : ");
+	scanf("%d", &jmlh); //kode program untuk input variable jmlh
+	
+	for(b=0;b<jmlh;b++) /*kode program akan dijalankan apabila nilai dalam () bernilai true, dan terus looping
+	sampai bernilai false, setiap looping nilai b bertambah 1*/
+	{
+		printf("Masukkan Huruf ke%d : ", b+1);
+		scanf("%s", &a[b]); //menginputkan huruf
+	}
+	for(c=jmlh-1;c>=0;c--)/*kode program akan dijalankan apabila nilai dalam () bernilai true, dan terus looping
+	sampai bernilai false, setiap looping nilai c berkurang 1*/
+	{
+		for(b=0;b<=c;b++) //melakukan perulangan for b=0 hingga b<=c , jika nilai bernilai true akan terus menjalankan perulangan dan jika nilai false akan berhenti perulangan tersebut
+		{
+			printf("%c", a[b]);//menampilkan huruf
+		}
+		printf("\n");
+	}
+	printf("\n\n");
+}
+ 
+void soal3af() //membuat fungsi soal3af
+{
+	printf("Soal 3 a Modul 6\n\n");
+	
+	int n, i, m; //mendeklarasikan variabel tipe data int
+    float no[50], jmlh, avg; //mendeklarasikan variabel tipe data float
+
+    printf("Masukkan Jumlah Angka: ");
+    scanf("%d", &n); //menginputkan jumlah angka
+    while (n>50||n<1){ //melakukan perulangan while
+        printf("Angka Harus Antara 1 - 50.\n");  
+        printf("Masukkan Angka: "); //menginputkan angka
+        scanf("%d", &n);
+    }
+	
+	for (i=0;i<n;i++){ //melakukan perulangan for i=0 hingga i<n , jika nilai bernilai true akan terus menjalankan perulangan dan jika nilai false akan berhenti perulangan tersebut
+        printf("Masukkan Angka ke-%d = ", i + 1);
+        scanf("%f", &no[i]); //menginputkan angka
+        jmlh += no[i];
+    } 
+    
+    avg = jmlh/n; //rumus rata rata
+    printf("Rata-Rata = %.2f", avg); //menampilkan rata rata 
+    
+	printf("\n\n");
+}
+
+void soal3bf() //membuat fungsi soal3bf
+{
+	printf("Soal 3 b Modul 6\n\n");
+		
+	int n,i,modus,j,a,b=0; //mendeklarasikan variabel tipe data int
+
+	printf("Berapa angka = ");
+	scanf("%d", &n); //menginputkan jumlah angka angka yang ingin di inputkan
+	int m[n];
+	
+	for(i=0;i<n;i++){ //melakukan perulangan for dari i=0 hingga i<n , jika nilai bernilai true akan terus menjalankan perulangan dan jika nilai false akan berhenti perulangan tersebut
+		scanf("%d", &m[i]); //menginputkan angka
+	}
+	
+	modus =m[0]; //fungsi menghitung modus
+	
+	for(i=0;i<n;i++){ //melakukan perulangan for dari i=0 hingga i<n , jika nilai bernilai true akan terus menjalankan perulangan dan jika nilai false akan berhenti perulangan tersebut
+		a=0;
+		for(j=0;j<n;j++){ //melakukan perulangan for dari j=0 hingga j<n , jika nilai bernilai true akan terus menjalankan perulangan dan jika nilai false akan berhenti perulangan tersebut
+			if(m[i] == m[j])
+			a++;
+		}
+		if(a > b){ //melakukan perulangan if else untuk menentukan nilai yang bernilai true a>b
+			modus = m[i]; //fungsi modus
+			b=a;//b menggantikan nilai a
+		}else if(a == b){ //melakukan perulangan if else untuk menentukan nilai yang bernilai true a==b
+			if(m[i]>modus){
+				b=a;//b menggantikan nilai a
+				modus=m[i]; //fungsi modus
+			}
+		}
+	}
+	
+	printf("modusnya adalah %d yang banyaknya %d", modus,b); //mencetak modus dan jumlah angka yang di input
+	
+	printf("\n\n");
+}
+
+void soal4f()//membuat fungsi soal4bf
+{
+	printf("Soal 4 Modul 6\n\n");
+	
+	char x[10]; //inisialisasi tipe data untuk variabel x dan y dengan jumlah elemen 10
+	char y[10];
+	
+	printf("Masukkan Nama Depan : "); //menginputkan nama depan
+	scanf("%s", &x);
+	printf("Masukkan Nama Belakang : "); //menginputkan nama belakang
+	scanf("%s", &y);
+	printf("Nama Lengkap : %s %s", x, y); //menampilkan output gabungan variabel nama depan dan belakang
+	printf("\n\n");
+}	
+
+void soal5f()//membuat fungsi soal5f
+{
+	printf("Soal 5 Modul 6\n\n");
+	
+	char nama[60]; //mendeklarasikan variabel tipe data char
+	char insert;
+	int indeks, menu; //mendeklarasikan variabel tipe data int
+	
+	printf("Menu Program: (Masukkan angka untuk melanjutkan)\n");
+	printf("1. Insert karakter pada indeks x \n");
+	printf("2. Insert array pada indeks x \n");
+	printf("3. Pencarian substring/teks\n");
+	printf("4. Menggabungkan 2 buah string/teks\n ");
+	
+	printf("Masukkan menu yang anda pilih : ");
+	scanf("%i", &menu); //menginputkan menu yang ingin di pilih
+	printf("--------------------------------------------------\n");
+	
+	switch(menu) //fungsi switch untuk memilih menu
+	{
+		case 1: //masuk kedalam fungsi case 1
+		{
+			printf("Masukkan nama: "); //menginputkan nama 
+			getchar();
+			gets(nama);
+			printf("--------------------------------------------------\n");
+			printf("Nama yang anda masukkan: %s\n", nama); //menampilkan nama yang di inputkan sebelumnya
+			printf("--------------------------------------------------\n");
+			
+			printf("Indeks ke berapa dari nama anda yang ingin anda ubah? (dihitung mulai dari 0)\n");
+			printf("Masukkan inputan: "); //menginputkaan index yang ingin di ubah dihitung dari 0
+			scanf("%i", &indeks); 
+			
+			printf("Masukkan karakter: ");
+			getchar(); //menginputkan karakter yang ingin di ganti
+			insert = getche();
+			printf("\n--------------------------------------------------\n");
+			
+			printf("Indeks[%i] dari nama anda: %c\n", indeks, nama[indeks]);
+			nama[indeks] = insert; //menampilkan index dan nama dari index sebelum di rubah
+			printf("--------------------------------------------------\n");
+			
+			printf("Indeks[%i] setelah diubah: %c\n", indeks, nama[indeks]); //menampilkan index dan nama dari index sebelum di rubah setelah dirubah
+			printf("--------------------------------------------------\n");
+			
+			printf("Nama setelah diubah: %s\n", nama); //menampilkan nama setelah di rubah
+			break;
+		}
+		case 2: //masuk kedalam fungsi case 2
+		{
+			int p,i; //mendeklarasikan variabel tipe data int
+			
+			printf("Masukkan panjang array: ");
+			scanf("%i", &p); //menginputkan panjang array
+			printf("--------------------------------------------------\n");
+			
+			int gudangka[p];
+			
+			for (i=0; i<p; i++) //melakukan perulangan for dari i=0 hingga i<p , jika nilai bernilai true akan terus menjalankan perulangan dan jika nilai false akan berhenti perulangan tersebut
+			{
+				printf("Masukkan nilai indeks[%i] = ", i);
+				scanf("%i", &gudangka[i]); //menginput nilai index
+			}
+			
+			printf("--------------------------------------------------\n");
+			printf("| Isi array awal |\n");
+			printf("------------------");
+			
+			for(i=0; i<p; i++){ //melakukan perulangan for dari i=0 hingga i<p , jika nilai bernilai true akan terus menjalankan perulangan dan jika nilai false akan berhenti perulangan tersebut
+				printf("\nNilai indeks[%i] = %i", i, gudangka[i]); //menampilkan nilai index
+			}
+			
+			printf("\n--------------------------------------------------\n");
+			printf("Masukkan indeks ke berapa yang ingin diubah: ");
+			scanf("%i", &indeks); // input nilai index yang ingin dirubah
+			
+			printf("Masukkan nilai angka: ");
+			scanf("%i", &gudangka[indeks]); //mennginput nilai angka 
+			printf("--------------------------------------------------\n");
+			
+			printf("| Isi array setelah diubah |\n");
+			printf("----------------------------");
+			
+			for(i=0; i<p; i++){ //melakukan perulangan for dari i=0 hingga i<p , jika nilai bernilai true akan terus menjalankan perulangan dan jika nilai false akan berhenti perulangan tersebut
+				printf("\nNilai indeks[%i] = %i", i, gudangka[i]); //menampilkan nilai index yang telah di ubah
+			}
+			break;
+		}
+		case 3: //masuk kedalam fungsi case 3
+		{
+			
+			char search[60]; //mendeklarasikan variabel tipe data char
+			char* total;
+			
+			printf("Masukkan nama: ");
+			getchar();
+			gets(nama); //menginput nama
+			printf("--------------------------------------------------\n");
+			
+			printf("Nama yang anda masukkan: %s\n", nama); //menampilkan nama yang telah di input sebelumnya
+			printf("--------------------------------------------------\n");
+			
+			printf("Kata/teks apa yang ingin anda cari? ");
+			gets(search);//menginput kata yang ingin di cari
+			printf("--------------------------------------------------\n");
+			
+			total = strstr(nama, search);//fungsi untuk total untuk menggambung string nama dan kata yang di cari
+			
+			printf("Kata/teks yang anda cari yaitu %s di %s adalah: ", search, nama); //menampilkan kata yang di cari
+			if(total == NULL){//melakukan percabangan if else jika total == null
+				printf("Tidak ditemukan"); //menampikan tidak ditemukan
+			}else{
+				printf("%s", total); //menampilkan variabel total
+			}
+			
+			break;
+		}
+		case 4: //masuk kedalam fungsi case 4
+		{
+			char kalimat1 [100];  //mendeklarasikan variabel tipe data char
+			char kalimat2[] = ",Sedang belajar di UPN Veteran Jawa Timur"; 
+	
+			printf ("masukan nama anda : ");
+			scanf ("%s",kalimat1);	//menginput nama 
+	
+			strcat(kalimat1, kalimat2); //menggabungkan 2 buah string menjadi satu
+	
+			printf("%s", kalimat1); //menampilkan hasil 2 buah string
+			break;
+		}
+		
+	}
+	printf("\n\n");
+}
+
+//KESYA NURSYAHADA-21081010120-B081
+void mod7() //membuat fungsi modul 7
+{
+	int pil; //deklarasi variabel yang akan digunakan
+	system("cls"); //membersihkan layar
+	printf("======== PEMROGRAMAN FUNGSI / SUBRUTIN ========\n\n\n");
+	printf("Menu Program Penerapan Fungsi / Subrutin : \n\n");
+	printf("1. 1a Kerjakan soal-soal di modul 1 dengan menggunakan konsep fungsi yang tanpa passing parameter\n");
+	printf("2. 1b Kerjakan soal-soal di modul 1 dengan menggunakan konsep fungsi yang dengan passing parameter\n");
+	printf("3. 2a Kerjakan soal-soal di modul 2 dengan menggunakan konsep fungsi yang tanpa passing parameter\n");
+	printf("4. 2b Kerjakan soal-soal di modul 2 dengan menggunakan konsep fungsi yang dengan passing parameter\n");
+	printf("5. 3 Menghitung luas lingkaran dengan input panjang jariÃƒÂ¢Ã¢â€šÂ¬Ã¢â‚¬Å“jari lingkaran menggunakan fungsi\n");
+	printf("6. 4 Melakukan beberapa perhitungan dengan menggunakan ketiga rumus (menu)\n");
+	printf("(Masukkan 0 untuk kembali)\n\n");
+	printf("Masukkan Pilihan Menu : "); // memasukkan menu yang dipilih
+	scanf("%d",&pil); //menyimpan pilihan yang dipilih dalam variabel pil
+	system("cls");
+	switch(pil) //masuk ke percabangan switch case
+	{
+		case 1: //masuk ke pil 1
+			pil1g(); //menuju ke progran pil1g
+			break; //keluar dari case
+		case 2:
+			pil2g();
+			break;
+		case 3:
+			pil3g();
+			break;
+		case 4:
+			pil4g();
+			break;
+		case 5:
+			pil5g();
+			break;
+		case 6:
+			pil6g();
+			break;
+		default: //apabila memilih selain pil 1- 6
+			break;
+	}
+}
+	
+//tanpa pasing parameter
+int jabatana() //deklarasi fungsi jabatana
+{
+	int n; //deklarasi variabel yang akan digunakan
+	if(n<=5){ //melalukan branching sesuai kondisi
+		printf("Operator");
+	}else if(n>=1, n<=8)
+		printf("Staff");
+	else if(n>8, n<=10)
+		printf("Eksekutif");
+	else if(n>10, n<=13)
+		printf("Senior Eksekutif");
+	else if(n>13, n<=16)
+		printf("Asisten Manager");
+	else if(n>13, n<=20)
+		printf("Manager");
+	else if(n>20)
+		printf("ANDA SALAH MEMASUKAN");
+}
+
+void pil1g() //membuat fungsi pilihan 1 tanpa pasing parameter
+{
+	int n; //deklarasi variabel yang akan digunakan
+	printf("Hasil Nilai Tes \n"); //menampilkan perintah untuk memasukkan hasil nilai tes
+	scanf("%d",&n); //menyimpan hasil inputan nilai tes dengan variabel n
+	printf("Jabatan Anda Adalah \n"); //menampilkan jabatan sesuai dengan grade pada nilai hasil tes yang dimasukkan
+	jabatana(); //memanggil fungsi jabatana
+}
+
+//dengan pasing parameter
+int jabatanb() //deklarasi fungsi jabatanb
+{
+	int n; //deklarasi variabel yang akan digunakan
+	printf("Hasil Nilai Tes \n"); //menampilkan perintah untuk memasukkan hasil nilai tes 
+	scanf("%d",&n);  //menyimpan hasil inputan nilai tes dengan variabel n
+}
+
+void pil2g() //membuat fungsi pilihan 2 dengan pasing parameter
+{
+	int n; //deklarasi variabel yang akan digunakan
+	jabatanb(); //memanggil fungsi jabatanb
+	if(n<=5){ //melalukan branching sesuai kondisi
+		printf("Operator");
+	}else if(n>=1, n<=8)
+		printf("Staff");
+	else if(n>8, n<=10)
+		printf("Eksekutif");
+	else if(n>10, n<=13)
+		printf("Senior Eksekutif");
+	else if(n>13, n<=16)
+		printf("Asisten Manager");
+	else if(n>13, n<=20)
+		printf("Manager");
+	else if(n>20)
+		printf("ANDA SALAH MEMASUKAN");
+}
+
+//tanpa passing parameter
+void batasana(int batas); //deklarasi fungsi
+void batasana(int batas) //deklarasi variabel yang akan digunakan
+{
+	for(int i=1;i<=batas;i++) //perulangan for
+	{
+		if(i%2==0) //jika i:2 tidak memiliki sisa
+		{
+			printf("%i",i); //maka menampilkan nilai i
+			printf("\n");
+		}
+	}
+}
+
+void pil3g() //membuat fungsi pilihan 3 tanpa pasing parameter
+{
+	int i,batas; //deklarasi variabel yang akan digunakan
+	printf("masukkan batasan angka : "); //menampilkan perintah untuk memasukkan batasan angka
+	scanf("%i",&batas); //menyimpan hasil inputan batasan angka dengan variabel batas
+	batasana(batas); //memanggil fungsi
+}
+
+//dengan pasing parameter
+void batasanb() //deklarasi fungsi
+{
+	int i,batas; //deklarasi variabel yang akan digunakan
+	printf("masukkan batasan angka : "); //menampilkan perintah untuk memasukkan batasan angka
+	scanf("%i",&batas); //menyimpan hasil inputan batasan angka dengan variabel batas
+}
+
+void pil4g() //membuat fungsi pilihan 3 dengan pasing parameter
+{
+	int i,batas; //deklarasi variabel yang akan digunakan
+	batasanb(); //memanggil fungsi
+		for(i=1;i<=batas;i++) //perulangan for
+	{
+			if(i%2==0) //jika i:2 tidak memiliki sisa
+		{
+			printf("%i",i); //maka menampilkan nilai i
+			printf("\n");
+		}
+	}
+}
+
+//tanpa passing parameter
+int rumus7(int r); //deklarasi fungsi
+int rumus7(int r) //deklarasi variabel yang akan digunakan
+{
+	int luas; //deklarasi variabel yang akan digunakan
+	luas = 3.14*r*r; //rumus luas
+	return luas; //mengakhiri fungsi luas
+}
+
+void pil5g() //membuat fungsi pilihan 3 tanpa pasing parameter
+	{
+	int r, luas; //deklarasi variabel yang akan digunakan
+	
+	printf("Menghitung Luas Lingkaran\n");
+	printf("Masukkan panjang r = "); //menampilkan perintah untuk memasukkan panjang
+	scanf("%d",&r); //menyimpan hasil inputan panjang dengan variabel r
+	
+	luas = rumus7(r); //rumus luas memanggil dari fungsi
+	
+	printf("\nluas Lingkaran = %d",luas); //menampilkan hasil perhitungan luas
+	}
+	
+//dengan passing parameter
+float rumus1(float A,float N) //menggunakan float karena dapat menampung data berupa pecahan
+{
+	float B1; //deklarasi float dalam variabel B1
+	B1=(A+N)/2; //rumus B1
+}
+
+float rumus2(float A,float N)
+{
+	float B2;
+	B2=A*N;
+}
+
+float rumus3(float A,float N)
+{
+	float B3;
+	B3=(A*A)-N;
+}
+
+void pil6g() ////membuat fungsi pilihan 3 dengan pasing parameter
+{
+	float A,N,B; //menggunakan float agar bisa menyimpan data berupa angka pecahan
+	int X; //deklarasi variabel yang digunakan
+	printf("masukkan nilai A (1 s/d 25) : "); //menampilkan perintah untuk memasukkan nilai A
+	scanf("%f",&A); //menyimpan hasil inputan nilai dengan variabel A
+	printf("masukkan nilan N (1 s/d 25) : "); //menampilkan perintah untuk memasukkan nilai N
+	scanf("%f",&N); //menyimpan hasil inputan nilai dengan variabel N
+	printf("pilihan rumus : \n"); //menampilkan pilihan rumus
+	printf("1. B = (A+N)/2 \n");
+	printf("2. B = A*N \n");
+	printf("3. B = (A*A)-N \n");
+	printf("masukkan pilihan rumus : "); //menampilkan perintah untuk memasukkan pilihan rumus
+	scanf("%i",&X); //menyimpan hasil inputan nilai dengan variabel X
+	
+	if(X==1) //melalukan branching sesuai kondisi
+	{
+		B=rumus1(A,N);
+	}
+	else if(X==2)
+	{
+		B=rumus2(A,N);
+	}
+	else if(X==3)
+	{
+		B=rumus3(A,N);
+	}
+	else
+	{
+		printf("inputan salah!");
+	}
+	printf("Nilai B adalah %.2f\n", B); //menampilkan nilai B dari perhitungan sesuai inputan
+}	
+	
+	
+
